@@ -30,3 +30,8 @@ memed [-h] --path PATH [--caption CAPTION] [--width WIDTH] [--height HEIGHT]
 |--caption <some_caption>|String|GIF text caption. Default is "caption" if not specified.|
 |--width <width>|Integer|GIF width. Default is 720 if not specified.|
 |--height <height>|Integer|GIF height. Default is 600 if not specified.|
+
+## Roadmap
+- [ ] GUI version
+- [ ] Emoji support for caption
+- [ ] Customizable fonts for caption
