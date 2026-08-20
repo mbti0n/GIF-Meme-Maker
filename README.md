@@ -27,6 +27,6 @@ memed [-h] --path PATH [--caption CAPTION] [--width WIDTH] [--height HEIGHT]
 |---|---|---|
 |-h, --help|N/A|Help message|
 |--path <path/to/image>|String|Path to the image. **(REQUIRED)**|
-|--caption <caption>|String|GIF text caption. Default is "caption" if not specified.|
+|--caption <some_caption>|String|GIF text caption. Default is "caption" if not specified.|
 |--width <width>|Integer|GIF width. Default is 720 if not specified.|
 |--height <height>|Integer|GIF height. Default is 600 if not specified.|
