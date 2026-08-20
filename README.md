@@ -1,6 +1,8 @@
 # GIF-Meme-Maker
 A simple Discord-style text-and-image fade in GIF generator.
 
+<img width="720" height="600" alt="memed-2026-08-20-18-42-02" src="https://github.com/user-attachments/assets/cd0a59ec-7471-4e27-a095-9e63333e2ffb" />
+
 ## Installation
 ### Clone this repository
 ``` bash
