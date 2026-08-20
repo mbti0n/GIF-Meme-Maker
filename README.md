@@ -4,7 +4,7 @@ A simple Discord-style text-and-image fade in GIF generator.
 ## Installation
 ### Clone this repository
 ``` bash
-git clone https://github.com/mbti0n/GIF-Meme-Maker
+git clone https://github.com/mbti0n/GIF-Meme-Maker && cd GIF-Meme-Maker
 ```
 
 ### Make the script execuable
