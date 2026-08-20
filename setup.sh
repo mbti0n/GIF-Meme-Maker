@@ -5,7 +5,7 @@ SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 INSTALL_DIR="$HOME/.local/bin"
 
 echo "Installing Python dependencies..."
-pip3 install -r "$SCRIPT_DIR/requirements.txt"
+pip3 install --break-system-packages -r "$SCRIPT_DIR/requirements.txt"
 
 mkdir -p "$INSTALL_DIR"
 
