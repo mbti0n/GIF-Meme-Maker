@@ -29,10 +29,10 @@ memed [-h] --path PATH [--caption CAPTION] [--width WIDTH] [--height HEIGHT]
 |Command|Type|Description|
 |---|---|---|
 |-h, --help|N/A|Help message|
-|--path <path/to/image>|String|Path to the image. **(REQUIRED)**|
-|--caption <some_caption>|String|GIF text caption. Default is "caption" if not specified.|
-|--width <width>|Integer|GIF width. Default is 720 if not specified.|
-|--height <height>|Integer|GIF height. Default is 600 if not specified.|
+|--path, -P <path/to/image>|String|Path to the image. **(REQUIRED)**|
+|--caption, -C <some_caption>|String|GIF text caption. Default is "caption" if not specified.|
+|--width, -W <width>|Integer|GIF width. Default is 720 if not specified.|
+|--height, -H <height>|Integer|GIF height. Default is 600 if not specified.|
 
 ## Roadmap
 - [ ] GUI version
