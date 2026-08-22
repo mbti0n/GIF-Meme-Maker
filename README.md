@@ -33,6 +33,7 @@ memed [-h] --path PATH [--caption CAPTION] [--width WIDTH] [--height HEIGHT]
 |--caption, -C <some_caption>|String|GIF text caption. Default is "caption" if not specified.|
 |--width, -W <width>|Integer|GIF width. Default is 720 if not specified.|
 |--height, -H <height>|Integer|GIF height. Default is 600 if not specified.|
+|--output, -O <output_path>|String|Output directory. You will receive a prompt to specify the output directory if not specified.|
 
 ## Roadmap
 - [ ] GUI version
