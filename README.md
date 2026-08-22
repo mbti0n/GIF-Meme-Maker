@@ -39,5 +39,5 @@ memed [-h] --path PATH [--caption CAPTION] [--width WIDTH] [--height HEIGHT]
 - [ ] GUI version
 - [ ] Emoji support for caption
 - [ ] Customizable fonts for caption
-- [ ] Customizable download directory
+- [x] Customizable download directory
 - [x] Log messages
