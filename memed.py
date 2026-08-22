@@ -8,7 +8,7 @@ arguments.add_argument("--path", "-P", type=str, required=True, help="Path to th
 arguments.add_argument("--caption", "-C", type=str, help="GIF text caption. Default is \"caption\" if not specified.")
 arguments.add_argument("--width", "-W", type=int, help="GIF width. Default is 720 if not specified.")
 arguments.add_argument("--height", "-H", type=int, help="GIF height. Default is 600 if not specified.")
-arguments.add_argument("--output", "-O", type=str, help="Directory of the output GIF. You will be prompted to specify the output directory if not specified.")
+arguments.add_argument("--output", "-O", type=str, help="Output directory. You will receive a prompt to specify the output directory if not specified.")
 
 args = arguments.parse_args()
 path = args.path
