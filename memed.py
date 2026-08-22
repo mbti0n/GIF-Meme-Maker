@@ -4,10 +4,10 @@ import argparse, emoji
 from datetime import datetime, timezone
 
 arguments = argparse.ArgumentParser()
-arguments.add_argument("--path", type=str, required=True, help="Path to the image.")
-arguments.add_argument("--caption", type=str, help="GIF text caption. Default is \"caption\" if not specified.")
-arguments.add_argument("--width", type=int, help="GIF width. Default is 720 if not specified.")
-arguments.add_argument("--height", type=int, help="GIF height. Default is 600 if not specified.")
+arguments.add_argument("--path", "-P", type=str, required=True, help="Path to the image.")
+arguments.add_argument("--caption", "-C", type=str, help="GIF text caption. Default is \"caption\" if not specified.")
+arguments.add_argument("--width", "-W", type=int, help="GIF width. Default is 720 if not specified.")
+arguments.add_argument("--height", "-H", type=int, help="GIF height. Default is 600 if not specified.")
 
 args = arguments.parse_args()
 path = args.path
@@ -26,6 +26,7 @@ def create_image(width, height, caption, path):
     try:
         current = datetime.now(timezone.utc)
         timestamp = current.astimezone().strftime("%Y-%m-%d-%H-%M-%S")
+        print("Generating GIF file...")
         im = Image.new(mode="RGB", size=(width, height), color=(255, 255, 255))
         im2 = Image.new(mode="RGB", size=(width, height), color=(0, 0, 0))
         image2 = Image.open(path)
@@ -44,6 +45,7 @@ def create_image(width, height, caption, path):
         for i in range(40):
             frames.append(Image.blend(im, im2, 0))
         frames[0].save(f"memed-{timestamp}.gif", save_all=True, append_images=frames[1:], duration=40, loop=0)
+        print("Saved!")
     except Exception as e:
         print(e)
 
